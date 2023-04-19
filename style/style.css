@@ -1,0 +1,255 @@
+/* Start Global Ruled */
+html {
+  scroll-behavior: smooth;
+}
+
+/* End Global Ruled */
+
+/* Start Font */
+
+body {
+  font-family: "Berkshire Swash", cursive;
+  /* font-family: "Roboto Condensed", sans-serif; */
+  background-image: url(../images/body-bg.png);
+}
+
+/* End Font */
+
+/* Start Navbar */
+.first-nav {
+  background-color: #fff2cc;
+}
+.SignIn {
+  color: #8b4403;
+}
+
+.SearchBox {
+  background-color: #1c202280 !important  ;
+  color: white !important;
+}
+.Searchicon {
+  background-color: #1c202280 !important;
+}
+.ndNav {
+  background-color: #ffd966;
+  height: 3rem;
+  display: flex;
+}
+@media (max-width: 786px) {
+  .first-nav a img {
+    width: 80%;
+  }
+  .SignIn {
+    font-size: 15px;
+  }
+  .stNavGroup {
+    padding: 0 !important;
+  }
+  .stNavGroup i {
+    font-size: 15px !important;
+    margin-left: 0 !important;
+  }
+  .SearchBox {
+    display: none !important;
+  }
+  .stNavGroup {
+    justify-content: end;
+  }
+}
+
+/* ********************** */
+@media (max-width: 786px) {
+  .navbar-nav .nav-item-2,
+  .navbar-nav .nav-item-3,
+  .navbar-nav .nav-item-4,
+  .navbar-nav .nav-item-5 {
+    margin-left: 1rem;
+  }
+  .navbar-nav .nav-item a {
+    font-size: 10px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-nav .me-5 {
+    margin-right: auto !important;
+  }
+}
+/* End Navbar */
+/* Start main */
+main .hero-overlay {
+  position: relative;
+  background-image: url(../images/hero.png);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+main .About-Us h1 {
+  color: #fff2cc;
+  font-size: 50px;
+  font-family: "Berkshire Swash", cursive;
+}
+main .About-Us p {
+  font-family: "Berkshire Swash", cursive;
+}
+main .sec-lable div {
+  width: 15rem;
+  height: 4rem;
+  background-color: #fff2cc;
+  opacity: 80%;
+  border-radius: 0 15px 15px 0;
+  margin: 5rem 0;
+}
+main .sec-lable div p {
+  color: #8b4403;
+  font-family: "Berkshire Swash", cursive;
+  font-size: 30px;
+  margin: auto;
+}
+/* Start Calc-Service  */
+.Calc-serv {
+  background-image: url(../images/section-bg.png);
+}
+.Calc-serv .bread-cont .bread-imgs .Vec {
+  top: 4px;
+  left: -5px;
+}
+.Calc-serv .bread-cont .bread-imgs .vec1 {
+  top: 25px;
+  left: 20px;
+}
+.Calc-serv .bread-cont .bread-imgs .vec2 {
+  left: 70px;
+  top: 63px;
+}
+.Calc-serv .bread-cont .bread-imgs .vec3 {
+  top: 100px;
+  left: 112px;
+}
+.bread-cont {
+  padding: 9rem;
+}
+
+.bread-cards h1 {
+  color: #8b4403;
+  font-family: "Berkshire Swash", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.bread-cards p {
+  font-size: 20px;
+  font-family: "Berkshire Swash", cursive;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+.bread-cards button {
+  width: 100px;
+  height: 40px;
+  background-color: #fff2cc7d;
+  border: 2px solid #8b4403;
+  border-radius: 15px;
+  box-shadow: 3px 2px 4px #8b4403;
+  color: #8b4403;
+  font-size: 20px;
+  font-family: "Berkshire Swash", cursive;
+}
+
+.Croissants-cont {
+  padding: 0;
+}
+.Croissants-cards h1 {
+  color: #8b4403;
+  font-family: "Berkshire Swash", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.Croissants-cards p {
+  font-size: 20px;
+  font-family: "Berkshire Swash", cursive;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+.Croissants-cards button {
+  width: 100px;
+  height: 40px;
+  background-color: #fff2cc7d;
+  border: 2px solid #8b4403;
+  border-radius: 15px;
+  box-shadow: 3px 2px 4px #8b4403;
+  color: #8b4403;
+  font-size: 20px;
+  font-family: "Berkshire Swash", cursive;
+}
+.croissant {
+  width: 200px;
+  rotate: 10deg;
+}
+.cake-cont {
+  padding: 9rem;
+}
+.cake-cards h1 {
+  color: #8b4403;
+  font-family: "Berkshire Swash", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.cake-cards p {
+  font-size: 20px;
+  font-family: "Berkshire Swash", cursive;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+.cake-cards button {
+  width: 100px;
+  height: 40px;
+  background-color: #fff2cc7d;
+  border: 2px solid #8b4403;
+  border-radius: 15px;
+  box-shadow: 3px 2px 4px #8b4403;
+  color: #8b4403;
+  font-size: 20px;
+  font-family: "Berkshire Swash", cursive;
+}
+
+.Calc-serv .cake-cont .cake-imgs .cake {
+  width: 200px;
+  top: -6px;
+  left: -5px;
+}
+/* End Calc-Service  */
+/* End main */
+/* Start Footer */
+footer {
+  background-color: #fff2cc;
+}
+
+footer .group1 {
+  padding: 0 10% 1rem 10%;
+}
+
+footer section span {
+  color: #8b4403;
+  font-size: 20px;
+  font-weight: bold;
+}
+footer section p {
+  color: #8b4403;
+}
+footer hr:not([size]) {
+  color: #8b4403;
+  height: 2px;
+}
+footer a {
+  color: #8b4403;
+}
+footer .Copyright {
+  color: #8b4403;
+}
+/* End Footer */
