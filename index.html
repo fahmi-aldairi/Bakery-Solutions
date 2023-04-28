@@ -31,7 +31,7 @@
   <body>
     <header>
       <!-- Start First Navbar -->
-      <nav>
+      <nav class="first-nav1">
         <div class="container-fluid d-flex px-xxl-5 first-nav">
           <a href="#"><img src="./images/Logo.png" alt="#" /></a>
           <div class="container d-flex justify-content-end">
@@ -39,20 +39,19 @@
               class="stNavGroup container d-flex justify-content-sm-end align-items-center"
             >
               <a class="SignIn me-2 fw-bold text-decoration-none" href="#"
-                >Sign-In</a
-              >
-              <i class="fa-solid fa-user fs-5 me-3" style="color: #8b4403"></i>
-              <i
-                class="fa-solid fa-cart-shopping fs-5 me-3"
-                style="color: #8b4403"
-              ></i>
+                >Sign-In
+                <i class="fa-solid fa-user fs-5 me-3" id="user-logo"></i>
+              </a>
+              <a class="SignIn me-2 fw-bold text-decoration-none" href="#">
+                <i class="fa-solid fa-cart-shopping fs-5 me-3"></i
+              ></a>
               <div class="row">
                 <div class="col">
                   <div class="input-group">
                     <input
                       class="SearchBox form-control border-end-0 border"
                       type="search"
-                      value="search"
+                      placeholder="search"
                       id="example-search-input"
                     />
                     <span class="input-group-append">
@@ -72,7 +71,7 @@
       </nav>
       <!-- End First Navbar -->
       <!-- Start Second Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light ndNav">
+      <nav class="navbar navbar-expand-lg ndNav">
         <div
           class="container d-flex justify-content-center align-content-center"
         >
@@ -89,15 +88,25 @@
               <li class="nav-item nav-item-3 me-5">
                 <a class="nav-link fw-bold" href="#">Contact-Us</a>
               </li>
-              <li class="nav-item nav-item-4 me-5">
-                <div>
-                  <a class="nav-link fw-bold" href="#"
-                    >Services<i
-                      class="fa-solid fa-caret-down ms-1"
-                      style="color: #8b4403"
-                    ></i
-                  ></a>
-                </div>
+              <li class="nav-item dropdown me-5">
+                <a
+                  class="nav-link dropdown-toggle fw-bold"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Calc-Service</a></li>
+                  <li><a class="dropdown-item" href="#">Raw Materials</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item nav-item-5 me-5">
                 <a class="nav-link fw-bold" href="#">Storage</a>
@@ -107,6 +116,83 @@
         </div>
       </nav>
       <!-- End Second Navbar -->
+      <!-- Start Phone Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light phone-Navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img class="w-75" src="./images/Logo.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About-Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact-Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Calc-Service</a></li>
+                  <li><a class="dropdown-item" href="#">Raw Materials</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Storage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  >Sign-In <i class="fa-solid fa-user fs-5 me-3"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  >Cart <i class="fa-solid fa-cart-shopping fs-5 me-3"></i
+                ></a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control SearchBox"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline SearchBox" type="button">
+                <i class="fa fa-search" style="color: white"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- End Phone Navbar -->
     </header>
     <!-- Start Main -->
     <main>
@@ -197,7 +283,7 @@
             </p>
             <button>More</button>
           </div>
-          <div class="container position-relative d-flex justify-content-end">
+          <div class="container Croissants-img position-relative">
             <img
               class="position-absolute"
               src="./images/Ellipse 3.png"
@@ -242,9 +328,7 @@
       <section class="Our-Supplier container text-center my-5">
         <h1 class="mb-5">Our Supplier</h1>
       </section>
-      <section
-        class="Supplier container d-flex flex-row justify-content-between flex-wrap mb-5"
-      >
+      <section class="Supplier container mb-5">
         <div>
           <div
             class="wheat container d-flex flex-column justify-content-center"
@@ -317,7 +401,65 @@
           </div>
         </div>
       </section>
-      <!-- End Supplier -->
+      <!-- End Supplier -->]
+      <!-- Start Expertise -->
+      <section
+        class="About-Us container d-flex flex-column justify-content-center w-50 text-center my-5"
+      >
+        <h1 class="mb-5">Our Expertise</h1>
+        <p class="text-white">
+          Bakery Solutions is a leading quality provider of specialty bakery and
+          confectionery products with professional catering solutions. We supply
+          and deliver products to individuals, institutions, companies, cafes,
+          catering companies as well as homes to suit requirements in unlimited
+          quantities up to personal daily needs.
+        </p>
+      </section>
+      <!-- End Expertise -->
+      <!-- Start stats -->
+      <section class="container-fluid stats d-flex flex-column justify-content-start">
+        <section
+          class="About-Us container d-flex justify-content-start text-center"
+        >
+          <h1 class="mb-5 mt-5 position-relative" style="left: 9rem;">Our stats</h1>
+        </section>
+        <section>
+          <div class="row d-flex justify-content-start flex-wrap mt-100">
+            <div class="col-md-6">
+              <div class="progress yellow">
+                <span class="progress-left">
+                  <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                  <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">37.5%</div>
+              </div>
+
+              <div class="progress blue">
+                <span class="progress-left">
+                  <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                  <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">90%</div>
+              </div>
+
+              <div class="progress yellow">
+                <span class="progress-left">
+                  <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                  <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">37.5%</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- End stats -->
     </main>
     <!-- End Main -->
     <!-- Start Footer -->
