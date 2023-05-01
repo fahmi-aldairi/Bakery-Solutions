@@ -31,7 +31,7 @@
   content: "";
   width: calc(100% - 100px);
   height: 2px;
-  background: #000;
+  background: #8b4403;
   position: absolute;
   right: 0;
   bottom: 10px;
@@ -41,7 +41,7 @@
   content: "";
   width: calc(100% - 100px);
   height: 2px;
-  background: #000;
+  background: #8b4403;
   position: absolute;
   right: 0;
   bottom: 55px;

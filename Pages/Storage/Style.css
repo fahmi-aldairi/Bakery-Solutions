@@ -1,0 +1,114 @@
+.card {
+  background-color: transparent !important;
+}
+
+/* Start Main */
+.main-container {
+  background-image: url(../../images/section-bg.png);
+  margin: 5rem 0rem;
+  width: 80%;
+  border-radius: 20px;
+}
+.main-container .dropdown-menu {
+  position: static !important;
+  inset: 0px 0px 0px 0px !important;
+  margin: 0px !important;
+  transform: translate(0px, 0px) !important;
+}
+
+.main-container .logo {
+  width: 15%;
+  max-width: 85px;
+  margin: 15px 0;
+}
+.main-container .sidecontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+}
+.main-container .sideList {
+  max-width: 800px;
+  background-image: url(../../images/body-bg.png);
+  border-radius: 15px;
+  margin-bottom: 6rem;
+  padding: 1rem 3rem;
+  margin-left: 1rem;
+}
+
+.main-container .sideList .headList {
+  color: white;
+  font-size: 25px;
+  font-family: "Berkshire Swash", cursive;
+}
+.main-container .sideList .headList:hover {
+  color: #fff2cc;
+}
+
+.main-container .sideList .dropdown-item {
+  color: white;
+  font-family: "Berkshire Swash", cursive;
+}
+.main-container .sideList .dropdown-item:hover {
+  background-color: transparent;
+  color: #fff2cc;
+}
+
+@media (max-width: 992px) {
+  .card {
+    align-items: center;
+  }
+  .main-container .sidecontainer {
+    justify-content: center !important;
+    display: block;
+  }
+  .main-container .sideList {
+    padding: 0 10px;
+    margin-left: 0;
+    max-width: 800px;
+    margin-bottom: 1rem !important;
+  }
+  .main-container .sideList .headList {
+    font-size: 30px;
+  }
+  .main-container .sideList .headList2,
+  .main-container .sideList .headList3,
+  .main-container .sideList .headList4 {
+    margin-left: 20px;
+  }
+  .main-container .bigUl {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+  }
+  .main-container .d-grid {
+    justify-content: center !important;
+  }
+}
+@media (max-width: 768px) {
+  .main-container .sideList {
+    padding: 0 10px;
+    margin-left: 0;
+    max-width: 390px;
+    width: 95vw;
+  }
+  .main-container .sideList .headList {
+    font-size: 12px;
+  }
+  .main-container .sideList .headList2,
+  .main-container .sideList .headList3,
+  .main-container .sideList .headList4 {
+    margin-left: 10px;
+  }
+
+  .main-container .bigUl {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+
+  .main-container .sideList .dropdown-item {
+    padding: 5px 10px !important;
+  }
+}
+
+/* End Main */

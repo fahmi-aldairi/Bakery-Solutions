@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BS-Cart</title>
+    <title>BS-Menu</title>
     <!-- Css File -->
     <link rel="stylesheet" href="./Style.css" />
     <link rel="stylesheet" href="../../style/style.css" />
@@ -193,139 +193,166 @@
         </div>
       </nav>
     </header>
+    <!-- //////////////// -->
     <main>
-      <div class="container login-cont" style="width: 80%; border-radius: 20px">
-        <img
-          src="../../images/Group 9.png"
-          alt="#"
-          style="width: 15%; max-width: 85px; margin: 15px 0"
-        />
-        <div class="d-flex align-items-center justify-content-center">
+      <div class="container main-container">
+        <img class="logo" src="../../images/Group 9.png" alt="#" />
+        <div class="sidecontainer">
           <div class="card border-0">
-            <div class="card-body p-0" style="width: 70vw; max-width: 800px">
-              <h1 class="text-center" style="color: #8b4403; font-weight: bold">
-                Your Cart
-              </h1>
-              <div class="d-flex flex-column col-xl-10 mb-5 mt-5">
-                <p style="color: #8b4403">
-                  You're away **$ from free shipping!
-                </p>
-                <div
-                  class="d-flex flex-row justify-content-start"
-                  style="
-                    width: calc(100% - 200px);
-                    height: 2rem;
-                    background-color: #efefef;
-                    border-radius: 10px;
-                    box-shadow: 0 0 10px #8b4403;
-                  "
-                >
-                  <div
-                    class="position-relative"
-                    style="
-                      width: 50%;
-                      height: 2rem;
-                      background-color: #8b4403;
-                      border-radius: 10px;
-                      box-shadow: inset 0 0 10px #efefef;
-                    "
-                  ></div>
-                </div>
-              </div>
-              <div
-                class="d-flex flex-row justify-content-end position-relative"
-                style="color: #8b4403"
-              >
-                <p>Price</p>
-                <p class="tableHead mx-5">Quantity</p>
-                <p>Total</p>
-              </div>
-              <div class="container mb-5">
-                <div class="row mb-5">
-                  <div class="col">
-                    <div class="row">
-                      <img
-                        src="../../images/طحين-زيرو-3-247x296-removebg-preview.png"
-                        alt=""
-                        style="width: 200px; height: 200px"
-                        class="col pe-0"
-                      />
-                      <div class="col p-0 mt-4">
-                        <p class="m-0" style="color: #8b4403">
-                          All-purpose flour
-                        </p>
-                        <p class="m-0" style="color: #8b4403">50 kg</p>
-                        <button
-                          class="p-0"
-                          style="
-                            background-color: transparent;
-                            border: none;
-                            color: #6b6b6b;
-                          "
-                        >
-                          Remove
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="col d-flex flex-row justify-content-end position-relative p-0 mt-4" style="color: #8b4403;"
+            <div class="con card-body mt-4 sideList">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 bigUl">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle headList headList1"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
                   >
-                    <p>$150</p>
-                    <p class="mx-5">
-                      <input
-                        type="number"
-                        id="tentacles"
-                        name="tentacles"
-                        min="1"
-                        max="10"
-                        value="1"
-                        style="
-                          width: 57px;
-                          background-color: #d9d9d9;
-                          border: 1px solid #8b4403;
-                          color: #8b4403;
-                        "
-                      />
-                    </p>
-                    <p>$150</p>
-                  </div>
-                </div>
-              </div>
-              <div class="position-relative d-flex justify-content-end">
-                <p class="Subtotal" style="color: #8b4403;">Subtotal $150</p>
-              </div>
-              <div class="d-flex flex-column">
-                <div class="d-flex flex-column my-5" style="width: 250px">
-                  <label for="story" style="color: #8b4403;">Special instructions </label>
-                  <textarea
-                    id="story"
-                    name="story"
-                    rows="5"
-                    cols="33"
-                    class="mt-2"
-                    style="
-                      background-color: #d9d9d96b;
-                      border: 1px solid #8b4403;
-                    "
+                    Flour
+                  </a>
+                  <ul
+                    class="dropdown-menu bg-transparent"
+                    aria-labelledby="navbarDropdown"
                   >
-                  </textarea>
-                </div>
-                <div
-                  class="d-flex flex-row mb-4 justify-content-end mt-lg-5 mb-5"
-                >
-                  <button
-                    class="login-btn me-5"
-                    type="button"
-                    onclick="Login();"
+                    <li>
+                      <a class="dropdown-item" href="#">All-purpose Flour</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Zero Flour</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Zahra Flour</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Wheat Flour</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle headList headList2"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
                   >
-                    Update Cart
-                  </button>
-                  <button class="login-btn" type="button" onclick="Login();">
-                    Check Out
-                  </button>
-                </div>
-              </div>
+                    Oils
+                  </a>
+                  <ul
+                    class="dropdown-menu bg-transparent"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="#">Olive oil</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Sunflower oil</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Palm oil</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle headList headList3"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Salts
+                  </a>
+                  <ul
+                    class="dropdown-menu bg-transparent"
+                    aria-labelledby="navbarDropdown"
+                  ></ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle headList headList3"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Semolina
+                  </a>
+                  <ul
+                    class="dropdown-menu bg-transparent"
+                    aria-labelledby="navbarDropdown"
+                  ></ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle headList headList3"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Powders
+                  </a>
+                  <ul
+                    class="dropdown-menu bg-transparent"
+                    aria-labelledby="navbarDropdown"
+                  ></ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle headList headList3"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Butter
+                  </a>
+                  <ul
+                    class="dropdown-menu bg-transparent"
+                    aria-labelledby="navbarDropdown"
+                  ></ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle headList headList3"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Cheese
+                  </a>
+                  <ul
+                    class="dropdown-menu bg-transparent"
+                    aria-labelledby="navbarDropdown"
+                  ></ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle headList headList3"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Cocoa & Chocolate
+                  </a>
+                  <ul
+                    class="dropdown-menu bg-transparent"
+                    aria-labelledby="navbarDropdown"
+                  ></ul>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
